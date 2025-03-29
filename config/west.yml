@@ -13,8 +13,8 @@ manifest:
     #- name: m165437
     #url-base: https://github.com/M165437
     # OPTIONAL nice-view ulounge (urchin animation)
-    - name: ulounge
-      url-base: https://github.com/ulounge
+    #- name: ulounge
+    #  url-base: https://github.com/ulounge
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,8 +26,8 @@ manifest:
     #- name: nice-view-gem
     #remote: m165437
     #revision: main
-    - name: nice-view-mod
-      remote: ulounge
-      revision: main
+    #- name: nice-view-mod
+    #remote: ulounge
+    #revision: main
   self:
     path: config
