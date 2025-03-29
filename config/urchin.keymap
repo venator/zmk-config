@@ -64,7 +64,7 @@
 			flavor = "hold-preferred";
 			tapping-term-ms = <200>;
 			quick-tap-ms = <200>;
-			bindings = <&lt>, <&kp>;
+			bindings = <&mo>, <&kp>;
 		};
 
 		// Homerow mods
