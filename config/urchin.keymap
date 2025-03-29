@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // urob zmk-helpers
-//#include "zmk-helpers/helper.h"
+#include "zmk-helpers/helper.h"
 // Source desired key-position labels
 #include "zmk-helpers/key-labels/34.h"
 // Source unicode-chars for desired languages
