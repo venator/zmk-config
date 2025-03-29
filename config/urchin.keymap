@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // urob zmk-helpers
-#include "zmk-helpers/helper.h"
+//#include "zmk-helpers/helper.h"
 // Source desired key-position labels
 #include "zmk-helpers/key-labels/34.h"
 // Source unicode-chars for desired languages
@@ -76,7 +76,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_R THUMB>; // List of keys on the right side of the keyboard
+            hold-trigger-key-positions = <KEYS_R> <THUMB>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
 
@@ -88,7 +88,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_L THUMB>; // List of keys on the left side of the keyboard
+            hold-trigger-key-positions = <KEYS_L> <THUMB>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
 	};
