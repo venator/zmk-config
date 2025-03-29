@@ -3,15 +3,18 @@ manifest:
     # zmk official
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      # bravekarma
+    # urob
+    - name: urob
+      url-base: https://github.com/urob
+    # bravekarma
     - name: caksoylar
       url-base: https://github.com/caksoylar
-      # kyek / duckyb
+    # kyek / duckyb
     - name: duckyb
       url-base: https://github.com/duckyb
-      # OPTIONAL nice-view-gem (gem animation)
+    # OPTIONAL nice-view-gem (gem animation)
     #- name: m165437
-    #url-base: https://github.com/M165437
+    #  url-base: https://github.com/M165437
     # OPTIONAL nice-view ulounge (urchin animation)
     #- name: ulounge
     #  url-base: https://github.com/ulounge
@@ -20,14 +23,17 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: main
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
     #- name: nice-view-gem
-    #remote: m165437
-    #revision: main
+    #  remote: m165437
+    #  revision: main
     #- name: nice-view-mod
-    #remote: ulounge
-    #revision: main
+    #  remote: ulounge
+    #  revision: main
   self:
     path: config
