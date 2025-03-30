@@ -20,6 +20,12 @@ A firmware for the [Urchin Keyboard](https://github.com/duckyb/urchin) and the [
 
 </div>
 
+Diagram generated using [keymap-drawer](https://github.com/caksoylar/keymap-drawer):
+```sh
+keymap parse -c 10 -z config/urchin.keymap > urchin_keymap.yaml
+keymap draw urchin_keymap.yaml > assets/urchin_keymap.svg
+```
+
 ## References
 
 This layout is inspired by:
