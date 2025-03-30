@@ -141,6 +141,13 @@
 			layers = <BASE>;
 		};
 		*/
+		// enable/disable navigation and numbers layer
+		combo_navnum {
+			timeout-ms = <200>;
+			key-positions = <31 32>;
+			bindings = <&tog NAVNUM>;
+			layers = <BASE NAVNUM>;
+		};
 	};
 
 	keymap {
