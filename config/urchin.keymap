@@ -27,12 +27,13 @@
 // Layer definitions
 #define BASE 0
 #define NAVNUM 1
+#define FUN 2
 //#define SYM 1
 //#define EXT 2
 //#define FNC 3
 //#define SYM2 4
 //#define ACCENT 5
-#define SETTINGS 2
+#define SETTINGS 3
 // -----------------
 
 &sk {
@@ -150,22 +151,59 @@
 			label = "Base";
 			bindings = <
 			&kp Q &kp W &kp E &kp R &kp T                               &kp Y &kp U  &kp I     &kp O   &kp P
-			&hml LGUI A &hml LALT S &hml LCTRL D &hml LSHIFT F &kp G    &kp H &hmr RSHIFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI
+			&hml LGUI A &hml LALT S &hml LCTRL D &hml LSHIFT F &kp G    &kp H &hmr RSHIFT J &hmr RCTRL K &hmr LALT L &hmr RGUI SEMI
 			&kp Z &kp X &kp C &kp V &kp B                               &kp N &kp M  &kp COMMA &kp DOT &kp SLASH
 							&qt LSHIFT ESC &qlt NAVNUM BSPC             &qlt NAVNUM SPACE &qt RALT ENTER
 			>;
 		};
 
 		// Navigation and numbers
+		/*
 		navnum_layer {
 			label = "NavNum";
 			bindings = <
-			&kp TAB &kp HOME &kp UP &kp END &kp PG_UP                  &kp SLASH &kp N7 &kp N8 &kp N9 &none
+			&kp TAB &kp HOME &kp UP &kp END &kp PG_UP                  &kp SLASH &kp N7 &kp N8 &kp N9 &to FUN
 			&kp CAPS &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN             &kp MINUS &kp N4 &kp N5 &kp N6 &kp N0
 			&none &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &kp LS(TAB)     &kp COMMA &kp N1 &kp N2 &kp N3 &kp DOT
 							&qt LSHIFT ESC &kp DEL        &kp SPACE &qt RALT ENTER
 			>;
 		};
+		*/
+
+		// Navigation and numbers (vim-like)
+		navnum_layer {
+			label = "NavNum";
+			bindings = <
+			&none &none &none &none &to FUN         &kp SLASH &kp N7 &kp N8 &kp N9 &tog NAVNUM
+			&kp LEFT &kp DOWN &kp UP &kp RIGHT &kp TAB               &kp MINUS &kp N4 &kp N5 &kp N6 &kp N0
+			&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LS(TAB)      &kp COMMA &kp N1 &kp N2 &kp N3 &kp DOT
+							&qt LSHIFT ESC &kp DEL        &kp SPACE &qt RALT ENTER
+			>;
+		};
+
+		// Function keys
+		fun_layer {
+			label = "Fun";
+			bindings = <
+			&kp HOME &kp PG_DN &kp PG_UP &kp END &tog FUN                 &none &kp F7 &kp F8 &kp F9 &kp F12
+			&kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none               &none &kp F4 &kp F5 &kp F6 &kp F11
+			&none &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &none     &none &kp F1 &kp F2 &kp F3 &kp F10
+							&none &none        &none &none
+			>;
+		};
+
+		// Numbers layer
+		/*
+		numbers_layer {
+			label = "Num";
+			bindings = <
+			&none &kp N7 &kp N8 &kp N9 &kp SLASH            &kp TAB &kp HOME &kp PG_DN &kp PG_UP &kp END
+			&kp N0 &kp N4 &kp N5 &kp N6 &kp MINUS           &none &kp LEFT &kp DOWN &kp UP &kp RIGHT
+			&kp DOT &kp N1 &kp N2 &kp N3 &kp COMMA          &none &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &kp LS(TAB)
+							&qt LSHIFT ESC &kp DEL        &kp SPACE &qt RALT ENTER
+			>;
+		};
+		*/
 
 		// Numbers and high frequency symbols
 		/*
