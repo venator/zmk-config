@@ -145,14 +145,14 @@
 		// enable/disable navigation and numbers layer
 		combo_navnum {
 			timeout-ms = <200>;
-			key-positions = <31 32>;
+			key-positions = <33 9>;
 			bindings = <&tog NAVNUM>;
 			layers = <BASE NAVNUM>;
 		};
 		// enable/disable game layer
 		combo_game {
 			timeout-ms = <200>;
-			key-positions = <31 32>;
+			key-positions = <33 9>;
 			bindings = <&tog GAME>;
 			layers = <GAME>;
 		};
