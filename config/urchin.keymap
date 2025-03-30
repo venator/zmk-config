@@ -150,7 +150,7 @@
 			layers = <BASE NAVNUM>;
 		};
 		// enable/disable game layer
-		combo_navnum {
+		combo_game {
 			timeout-ms = <200>;
 			key-positions = <31 32>;
 			bindings = <&tog GAME>;
