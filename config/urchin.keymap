@@ -28,12 +28,13 @@
 #define BASE 0
 #define NAVNUM 1
 #define FUN 2
+#define GAME 3
 //#define SYM 1
 //#define EXT 2
 //#define FNC 3
 //#define SYM2 4
 //#define ACCENT 5
-#define SETTINGS 3
+#define SETTINGS 4
 // -----------------
 
 &sk {
@@ -148,6 +149,13 @@
 			bindings = <&tog NAVNUM>;
 			layers = <BASE NAVNUM>;
 		};
+		// enable/disable game layer
+		combo_navnum {
+			timeout-ms = <200>;
+			key-positions = <31 32>;
+			bindings = <&tog GAME>;
+			layers = <GAME>;
+		};
 	};
 
 	keymap {
@@ -192,10 +200,21 @@
 		fun_layer {
 			label = "Fun";
 			bindings = <
-			&none &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &tog FUN      &none &kp F7 &kp F8 &kp F9 &kp F12
+			&none &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &tog FUN      &to GAME &kp F7 &kp F8 &kp F9 &kp F12
 			&kp LGUI &kp LALT &kp LCTRL &kp LSHIFT &none               &none &kp F4 &kp F5 &kp F6 &kp F11
 			&none &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP &none           &none &kp F1 &kp F2 &kp F3 &kp F10
 							                          &none &none      &none &none
+			>;
+		};
+
+		// Gaming layer
+		game_layer {
+			label = "Game";
+			bindings = <
+			&kp TAB &kp Q &kp W &kp E &kp R       &none &kp N7 &kp N8 &kp N9 &none
+			&kp LSHIFT &kp A &kp S &kp D &kp F    &none &kp N4 &kp N5 &kp N6 &kp N0
+			&kp LCTRL &kp Z &kp X &kp C &kp V     &none &kp N1 &kp N2 &kp N3 &none
+							 &kp ESC &kp SPACE    &kp SPACE &kp ENTER
 			>;
 		};
 
