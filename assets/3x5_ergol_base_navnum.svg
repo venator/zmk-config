@@ -106,7 +106,7 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="12.8" y="20.6" class="level2">Z</text>
         <text x="38.0" y="43.4" class="sym">~</text>
-        <text x="38.0" y="43.4" class="nav text">⌘z</text>
+        <text x="38.0" y="43.4" class="nav text">⌘Z</text>
       </g>
     </g>
 
@@ -129,7 +129,7 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="12.8" y="20.6" class="level2">X</text>
         <text x="38.0" y="43.4" class="sym">[</text>
-        <text x="38.0" y="43.4" class="nav text">⌘x</text>
+        <text x="38.0" y="43.4" class="nav text">⌘X</text>
       </g>
     </g>
 
@@ -153,7 +153,7 @@
         <text x="12.8" y="43.4" class="level1">-</text>
         <text x="12.8" y="20.6" class="level2">?</text>
         <text x="38.0" y="43.4" class="sym">]</text>
-        <text x="38.0" y="43.4" class="nav text">⌘c</text>
+        <text x="38.0" y="43.4" class="nav text">⌘C</text>
       </g>
     </g>
 
@@ -176,7 +176,7 @@
         <rect width="52" height="52" rx="5" ry="5"/>
         <text x="12.8" y="20.6" class="level2">V</text>
         <text x="38.0" y="43.4" class="sym">_</text>
-        <text x="38.0" y="43.4" class="nav text">⌘v</text>
+        <text x="38.0" y="43.4" class="nav text">⌘V</text>
       </g>
     </g>
 
