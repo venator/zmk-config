@@ -16,6 +16,14 @@ A firmware for the [Urchin Keyboard](https://github.com/duckyb/urchin) and the [
 
 <div align="center">
 
+  ![urchin-cheatsheet](assets/3x5_ergol_base_navnum.svg)
+
+</div>
+
+## Keymap Layout
+
+<div align="center">
+
   ![urchin-layout](assets/urchin_keymap.svg)
 
 </div>
@@ -35,3 +43,4 @@ This layout is inspired by:
 - https://github.com/ulounge/zmk-urchin
 - https://github.com/manna-harbour/miryoku_zmk
 - https://github.com/hbmarchive/ferris-sweep
+- https://precondition.github.io/home-row-mods
