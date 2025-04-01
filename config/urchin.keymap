@@ -159,7 +159,7 @@
 		// enable caps word
 		combo_caps_word {
 			timeout-ms = <200>;
-			key-positions = <30 33>;
+			key-positions = <24 25>;
 			bindings = <&caps_word>;
 			layers = <BASE>;
 		};
@@ -198,7 +198,7 @@
 			bindings = <
 			&kp HOME &kp PG_DN &kp PG_UP &kp END &tog NAVNUM         &kp KP_SLASH &kp N7 &kp N8 &kp N9 &to FUN
 			&kp LEFT &kp DOWN &kp UP &kp RIGHT &kp TAB               &kp KP_MINUS &kp N4 &kp N5 &kp N6 &kp N0
-			&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LS(TAB)      &kp KP_COMMA &kp N1 &kp N2 &kp N3 &kp KP_DOT
+			&kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LS(TAB)      &kp KP_COMMA &kp N1 &kp N2 &kp N3 &kp DOT
 							                 &kp LSHIFT &kp DEL      &kp SPACE &to BASE
 			>;
 		};
