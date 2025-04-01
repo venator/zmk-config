@@ -39,6 +39,7 @@ keymap draw urchin_keymap.yaml > assets/urchin_keymap.svg
 This layout is inspired by:
 - https://ergol.org/claviers/compacts/#kbd_3x5
 - https://github.com/OneDeadKey/arsenik
+- https://github.com/qmk/qmk_firmware/tree/master/keyboards/ferris/keymaps/default
 - https://github.com/duckyb/urchin-zmk-firmware
 - https://github.com/ulounge/zmk-urchin
 - https://github.com/manna-harbour/miryoku_zmk

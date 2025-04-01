@@ -156,6 +156,13 @@
 			bindings = <&to BASE>;
 			layers = <GAME>;
 		};
+		// enable caps word
+		combo_caps_word {
+			timeout-ms = <200>;
+			key-positions = <30 33>;
+			bindings = <&caps_word>;
+			layers = <BASE>;
+		};
 	};
 
 	keymap {
