@@ -3,6 +3,7 @@ manifest:
     # zmk official
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    # Urchin
     # urob
     #- name: urob
     #  url-base: https://github.com/urob
@@ -18,11 +19,15 @@ manifest:
     # OPTIONAL nice-view ulounge (urchin animation)
     #- name: ulounge
     #  url-base: https://github.com/ulounge
+    # Forager
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    # Urchin
     #- name: zmk-helpers
     #  remote: urob
     #  revision: main
@@ -35,5 +40,12 @@ manifest:
     #- name: nice-view-mod
     #  remote: ulounge
     #  revision: main
+    # Forager
+    - name: forager-zmk-module
+      remote: carrefinho
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
   self:
     path: config
