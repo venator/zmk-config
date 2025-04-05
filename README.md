@@ -12,7 +12,7 @@ A firmware for the [Urchin Keyboard](https://github.com/duckyb/urchin) and the [
 
 [Download the firmware zip from the latest action run.](https://github.com/venator/zmk-urchin/actions/workflows/build.yml?query=is%3Asuccess+branch%3Amain) Check [the ZMK docs](https://zmk.dev/docs/user-setup#installing-the-firmware) for instructions on how to flash it.
 
-## Keymap Cheat Sheet
+## Keymap Cheat Sheet (Ergo-L layout)
 
 <div align="center">
 
