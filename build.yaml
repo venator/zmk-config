@@ -25,9 +25,17 @@ include:
     shield: urchin_right nice_view_adapter  nice_view # default nice_view shield
     #shield: urchin_right nice_view_adapter  nice_view_gem # default urchin shield (gem)
     #shield: urchin_right nice_view_adapter nice_view_custom # ulounge shield (urchin)
+  # Raytac dongle
+  - board: raytac_mdbt50q_rx
+    shield: forager_dongle
+    snippet: studio-rpc-usb-uart
+  - board: raytac_mdbt50q_rx
+    shield: settings_reset
   # Forager
   - board: seeeduino_xiao_ble
     shield: forager_left rgbled_adapter
-    snippet: studio-rpc-usb-uart
+    #snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
     shield: forager_right rgbled_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
