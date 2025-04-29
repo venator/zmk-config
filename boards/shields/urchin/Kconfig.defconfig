@@ -1,8 +1,8 @@
-if SHIELD_FORAGER_DONGLE
+if SHIELD_URCHIN_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Forager"
+    default "urchin"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
