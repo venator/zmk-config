@@ -30,6 +30,10 @@ include:
     shield: forager_dongle
   - board: raytac_mdbt50q_rx
     shield: settings_reset
+  # Prospector dongle
+  - board: seeeduino_xiao_ble
+    shield: forager_dongle prospector_adapter
+    snippet: studio-rpc-usb-uart
   # Forager
   - board: seeeduino_xiao_ble
     shield: forager_left rgbled_adapter
