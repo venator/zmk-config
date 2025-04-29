@@ -28,7 +28,7 @@ include:
   # Raytac dongle
   - board: raytac_mdbt50q_rx
     shield: forager_dongle
-    snippet: studio-rpc-usb-uart
+    #snippet: studio-rpc-usb-uart # FIXME
   - board: raytac_mdbt50q_rx
     shield: settings_reset
   # Prospector dongle
