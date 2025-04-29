@@ -22,9 +22,9 @@ manifest:
     # Forager
     - name: carrefinho
       url-base: https://github.com/carrefinho
-    # Raytac dongle
-    - name: rschenk
-      url-base: https://github.com/rschenk
+    # Raytac dongles
+    - name: venator
+      url-base: https://github.com/venator
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -54,7 +54,7 @@ manifest:
       remote: carrefinho
       revision: main
     - name: zmk-component-raytac-dongle
-      remote: rschenk
+      remote: venator
       revision: main
   self:
     path: config
