@@ -34,8 +34,12 @@ include:
     #cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano_v2
     shield: settings_reset
-  # Forager dongle (Raytac)
+  # Forager dongle (Raytac MDBT50-RX)
   - board: raytac_mdbt50q_rx
+    shield: forager_dongle
+    #snippet: studio-rpc-usb-uart # FIXME
+  # Forager dongle (Raytac MDBT50-CX-40)
+  - board: raytac_mdbt50q_cx_40
     shield: forager_dongle
     #snippet: studio-rpc-usb-uart # FIXME
   - board: raytac_mdbt50q_rx
