@@ -17,7 +17,7 @@ include:
   # Urchin dongle (Raytac USB-A)
   - board: raytac_mdbt50q_rx
     shield: urchin_dongle
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    cmake-args: -DCONFIG_ZMK_DISPLAY=n -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
     artifact-name: urchin_dongle-mdbt50q_rx
   # Urchin
   - board: nice_nano_v2
